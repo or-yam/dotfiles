@@ -1,0 +1,12 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Oryam
+	email = 48219965+or-yam@users.noreply.github.com
+[pull]
+	rebase = true
+[core]
+	editor = code

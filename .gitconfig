@@ -20,3 +20,4 @@
 	res = !git reset --hard
 	done = !git push origin HEAD
 	lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
+	sap = "!f(){ git stash; git pull origin $1; git stash pop; git push origin $1;}; f"

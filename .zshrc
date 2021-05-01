@@ -123,3 +123,22 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/OryamN/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/OryamN/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/OryamN/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/OryamN/google-cloud-sdk/completion.zsh.inc'; fi
+
+  # Set Spaceship ZSH as a prompt
+  autoload -U promptinit; promptinit
+  prompt spaceship
+  SPACESHIP_PROMPT_ORDER=(
+  dir           # Current directory section
+  git           # Git section (git_branch + git_status)
+  node          # Node.js section
+  xcode         # Xcode section
+  docker        # Docker section
+  line_sep      # Line break
+  char          # Prompt character
+)

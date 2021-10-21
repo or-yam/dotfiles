@@ -7,7 +7,7 @@
 	name = Oryam
 	email = 48219965+or-yam@users.noreply.github.com
 [pull]
-	rebase = true
+	rebase = false
 [core]
 	editor = code
 [alias]
@@ -27,3 +27,5 @@
 	alias-l = !git config --get-regexp alias 
 [init]
 	defaultBranch = main
+[help]
+	autoCorrect = 30

@@ -24,7 +24,8 @@
 	sap = "!f(){ git stash; git pull origin $1; git stash pop; git push origin $1;}; f"
 	# pull with stash
 	ps = "!f(){ git stash; git pull origin $1; git stash pop;}; f"
-	alias-l = !git config --get-regexp alias 
+	alias-l = !git config --get-regexp alias
+	brname =  "!sh $HOME/branch-name-script.sh"
 [init]
 	defaultBranch = main
 [help]

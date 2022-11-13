@@ -77,11 +77,11 @@
 - Hyper terminal
 - Wrap terminal
 - Kap (capture screen videos)
-- Lightshot (screenshots)
+- Lightshot (screenshots) https://app.prntscr.com/en/privacy.html
 - Maccy (clipboard)
 - Notion
 - postman
-- spectacle (moving windows)
+- spectacle (moving windows) https://github.com/eczarny/spectacle
 - Slack
 - Sublime text
 - VScode
@@ -96,3 +96,81 @@
 - [show app switcher across all displays](https://gist.github.com/jthodge/c4ba15a78fb29671dfa072fe279355f0)
 - [macOS System Preferences](https://amiryonatan.medium.com/increase-development-productivity-in-macos-c936fce43c17)
 - [macOS System Preferences (Video)](https://www.youtube.com/watch?v=tMNOpaQrfAE)
+
+## Brew list
+
+### Formulae
+
+- bdw-gc
+- heroku-node
+- libssh2
+- nghttp2
+- protobuf
+  brotli
+- icu4c
+- libtasn1
+- node
+- readline
+  c-ares
+- jansson
+- libtool
+- node@14
+- rtmpdump
+  ca-certificates
+- jemalloc
+- libunistring
+- node@16
+- six
+  cloudflared
+- jq
+- libuv
+- nvm
+- tailscale
+  curl
+- krb5
+- lz4
+- oniguruma
+- tree
+  emacs
+- libcbor
+- m4
+- openldap
+- unbound
+  gettext
+- libev
+- macos-term-size
+- openssl@1.1
+- xz
+  gh
+- libevent
+- mongodb-community
+- p11-kit
+- yarn
+  git
+- libffi
+- mongodb-database-tools
+- pcre
+- zlib
+  gmp
+- libfido2
+- mongosh
+- pcre2
+- zsh
+  gnutls
+- libidn2
+- mysql
+- pkg-config
+- zsh-syntax-highlighting
+  guile
+- libmetalink
+- ncurses
+- postgresql
+- zstd
+  heroku
+- libnghttp2
+- nettle
+- postgresql@14
+
+### Casks
+
+- font-fira-code

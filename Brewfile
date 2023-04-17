@@ -35,3 +35,11 @@ cask "fig"
 cask "font-fira-code"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+
+brew "lsd"
+brew "python"
+brew "bat"
+cask "maccy"
+cask "vscode"
+cask "sublime-text"
+

@@ -25,19 +25,22 @@
   - react dev tools
   - ublock origin
 - Alfred
+  - Settings:
 - Docker
 - Kap (capture screen videos)
 - Lightshot (screenshots) https://app.prntscr.com/en/privacy.html
-- Maccy (clipboard)
+- Maccy (clipboard) https://maccy.app/
 - Notion
 - postman
 - spectacle (rectangle) (moving windows) https://github.com/eczarny/spectacle
+  - setting: set as rectangle
 - Slack
-- Sublime text
-- VScode
+- Sublime text (from brew)
+- VScode (from brew)
 - zoom
 - inkscape
 - github desktop
+- excalidraw
 
 ### Mac setup
 
@@ -55,7 +58,7 @@ Software :
 - macOS Terminal
 
 OhMyZsh
-[Spaceship prompt](https://github.com/spaceship-prompt/spaceship-prompt)
+[Spaceship prompt](https://github.com/spaceship-prompt/spaceship-prompt) (consider replacing spaceship with starship)
 
 MesloLGS NF font
 

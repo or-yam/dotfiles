@@ -46,6 +46,12 @@
 
 - [Cursor Speed](https://www.maketecheasier.com/adjust-cursor-speed-in-mac/)
 - [show app switcher across all displays](https://gist.github.com/jthodge/c4ba15a78fb29671dfa072fe279355f0)
+
+```sh
+defaults write com.apple.dock appswitcher-all-displays -bool true
+killall Dock
+```
+
 - [macOS System Preferences](https://amiryonatan.medium.com/increase-development-productivity-in-macos-c936fce43c17)
 - [macOS System Preferences (Video)](https://www.youtube.com/watch?v=2_ZbslLnshw)
 

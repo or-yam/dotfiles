@@ -39,7 +39,7 @@ cask "iterm2"
 brew "lsd"
 brew "python"
 brew "bat"
+brew "fzf"
 cask "maccy"
 cask "vscode"
 cask "sublime-text"
-

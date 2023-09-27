@@ -8,7 +8,7 @@
 	email = 48219965+or-yam@users.noreply.github.com
 	#GITLAB USER email = oryam.nehoray@tikalk.com
 [includeIf "gitdir:~/projects/gitlab/"]
-    path = ~/gitlab-config/.gitconfig	
+    path = ~/gitlab-config/.gitconfig
 [pull]
 	rebase = false
 [core]
@@ -30,15 +30,15 @@
 	cob = checkout -b
 	del = branch -D
 	br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
-	fa = !git fetch --all --prune
+	fa = fetch --all --prune
 	undo = reset HEAD~1 --mixed
-	res = !git reset --hard
-	done = !git push origin HEAD
-	lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
+	res = reset --hard
+	done = push origin HEAD
+	lg = log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
 	# stash and push ex: git sap main
 	sap = "!f(){ git stash; git pull origin $1; git stash pop; git push origin $1;}; f"
-	# pull with stash
-	ps = "!f(){ git stash; git pull origin $1; git stash pop;}; f"
-	ac = !git add -A && git commit -m	
-	alias-l = !git config --get-regexp alias
-	brname =  "!sh $HOME/.branch-name-script.sh"
+	ps = pull --autostash
+	ac = !git add -A && git commit -m
+	alias-l = config --get-regexp ^alias\\.
+	brname =  "!sh $HOME/branch-name-script.sh"
+	fixup = "!source $HOME/gitfixup"

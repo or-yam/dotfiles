@@ -77,3 +77,8 @@ MesloLGS NF font
 - https://www.youtube.com/watch?v=tMNOpaQrfAE&t=4746s
 
 - https://github.com/wesbos/dotfiles
+
+## Add scripts to path
+
+1. Move script file to local `mv <script file path> .local/bin/<file name>` (no need .sh suffix in the file name)
+2. Give it executable permission `chmod u+x <file name>`

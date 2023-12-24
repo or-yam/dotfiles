@@ -22,3 +22,207 @@ This will change only the builtin mac keyboard. Incase you need to change also e
 ```
 
 You can specify to which device you want to make the change by using `ProductID`
+
+## Keyboard customizations
+
+Using [Karabiner](https://karabiner-elements.pqrs.org/) to turn the <kbd>⇪ Caps lock</kbd> to hyper key / <kbd>⎋ Escape</kbd> to switch beween apps directly.
+
+I add 2 Complex modifications:
+
+#### CapsLock to Hyper/Escape
+
+```json
+{
+    "description": "CapsLock to Hyper/Escape",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "caps_lock",
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "right_shift",
+                    "modifiers": [
+                        "right_command",
+                        "right_control",
+                        "right_option"
+                    ]
+                }
+            ],
+            "to_if_alone": [
+                {
+                    "key_code": "escape"
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
+```
+
+### Hyper Application (held down hyper+g to Fn)
+
+```json
+{
+    "description": "Hyper Application (held down hyper+g to Fn)",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "e",
+                "modifiers": {
+                    "mandatory": [
+                        "right_command",
+                        "right_control",
+                        "right_shift",
+                        "right_option"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "shell_command": "open -a 'finder'"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "1",
+                "modifiers": {
+                    "mandatory": [
+                        "right_command",
+                        "right_control",
+                        "right_shift",
+                        "right_option"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "shell_command": "open -a 'warp'"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "2",
+                "modifiers": {
+                    "mandatory": [
+                        "right_command",
+                        "right_control",
+                        "right_shift",
+                        "right_option"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "shell_command": "open -a 'Visual Studio Code'"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "3",
+                "modifiers": {
+                    "mandatory": [
+                        "right_command",
+                        "right_control",
+                        "right_option",
+                        "right_shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "shell_command": "open -a 'Google Chrome'"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "4",
+                "modifiers": {
+                    "mandatory": [
+                        "right_command",
+                        "right_control",
+                        "right_option",
+                        "right_shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "shell_command": "open -a slack"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "5",
+                "modifiers": {
+                    "mandatory": [
+                        "right_command",
+                        "right_control",
+                        "right_option",
+                        "right_shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "shell_command": "open -a notion"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "6",
+                "modifiers": {
+                    "mandatory": [
+                        "right_command",
+                        "right_control",
+                        "right_option",
+                        "right_shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "shell_command": "open -a music"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "f",
+                "modifiers": {
+                    "mandatory": [
+                        "right_command",
+                        "right_control",
+                        "right_shift",
+                        "right_option"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "shell_command": "open -b com.runningwithcrayons.Alfred-3"
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
+```

@@ -6,11 +6,18 @@
   # There are better and less manual ways to do this;
   # investigate install scripts and bootstrapping tools.
 
-  ln -s ~/.dotfiles/.zshrc ~/.zshrc
-  ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+  ln -s ~/Developer/dotfiles/.zshrc ~/.zshrc
+  ln -s ~/Developer/dotfiles/.zprofile ~/.zprofile
+  ln -s ~/Developer/dotfiles/.bashrc ~/.bashrc
+  ln -s ~/Developer/dotfiles/.gitconfig ~/.gitconfig
+  ln -s ~/Developer/dotfiles/.tmux.conf ~/.tmux.conf
+  ln -s ~/Developer/dotfiles/.spaceshiprc.zsh ~/.spaceshiprc.zsh
+  ln -s ~/Developer/dotfiles/config/tmux/startup.sh ~/.config/tmux/startup.sh
   ```
 
 - Install Homebrew, followed by the software listed in the Brewfile.
+
+- Review `docs/software.md` for the full inventory (brew bundle targets, manual apps, fonts, and verification checklist).
 
 ### Other Software to install
 

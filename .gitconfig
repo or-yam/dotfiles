@@ -10,7 +10,7 @@
 [includeIf "gitdir:~/projects/gitlab/"]
     path = ~/gitlab-config/.gitconfig
 [pull]
-	rebase = false
+	rebase = true
 [core]
 	editor = code
 [init]
@@ -40,5 +40,12 @@
 	ps = pull --autostash
 	ac = !git add -A && git commit -m
 	alias-l = config --get-regexp ^alias\\.
-	brname =  "!sh $HOME/branch-name-script.sh"
-	fixup = "!source $HOME/gitfixup"
+	brname =  "!sh $HOME/.branch-name-script.sh"
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[safe]
+	directory = /Users/oryam/.oh-my-zsh
+# [rerere]
+# 	enabled = true

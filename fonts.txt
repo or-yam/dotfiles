@@ -1,0 +1,10 @@
+- Anonymous pro
+- Fira code
+- Input mono
+- MesloLGS NF
+- Mono sans
+- Mona sans
+- Mono space (Argon, Krypton)
+- Noto color emoji
+- Symbols nerd font
+- Symbols nerd font mono

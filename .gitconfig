@@ -7,10 +7,10 @@
 	name = Oryam
 	email = 48219965+or-yam@users.noreply.github.com
 	#GITLAB USER email = oryam.nehoray@tikalk.com
-[includeIf "gitdir:~/projects/gitlab/"]
-    path = ~/gitlab-config/.gitconfig
+[includeIf "gitdir:~/Developer/gitlab/"]
+    path = ~/Developer/gitlab/.gitconfig
 [pull]
-	rebase = false
+	rebase = true
 [core]
 	editor = code
 [init]
@@ -35,10 +35,18 @@
 	res = reset --hard
 	done = push origin HEAD
 	lg = log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
-	# stash and push ex: git sap main
-	sap = "!f(){ git stash; git pull origin $1; git stash pop; git push origin $1;}; f"
+	# Pull with rebase and autostash handles the messy part for you safely
+    sap = "!f() { git pull --rebase --autostash origin $1 && git push origin $1; }; f"
 	ps = pull --autostash
 	ac = !git add -A && git commit -m
 	alias-l = config --get-regexp ^alias\\.
-	brname =  "!sh $HOME/branch-name-script.sh"
-	fixup = "!source $HOME/gitfixup"
+	brname = "!git symbolic-ref --short HEAD | tr -d '\\n' | pbcopy"
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[safe]
+	directory = /Users/oryam/.oh-my-zsh
+# [rerere]
+# 	enabled = true
+

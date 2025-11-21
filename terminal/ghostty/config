@@ -1,0 +1,109 @@
+# Title
+title = "Ghostty 🐋"
+macos-titlebar-style = tabs
+
+# Theme
+theme = iTerm2 Default
+# theme = iTerm2 Pastel Dark background
+# theme = dark:catppuccin-frappe,light:catppuccin-latte
+# theme = catppuccin-mocha
+background = black
+background-blur-radius = 20
+
+# Fonts
+font-size = 16
+font-family = "MesloLGS NF"
+font-family = "Noto Color Emoji"
+font-family = "Nerd Font Symbols"
+
+# disable font ligatures
+font-feature = -liga
+font-feature = -calt
+font-feature = -dlig
+
+# Layout
+window-padding-color = background
+window-padding-balance = true
+window-padding-x = 10
+window-padding-y = 0
+window-decoration = true
+
+mouse-hide-while-typing = true
+macos-option-as-alt = true
+
+
+
+# App icon
+# blueprint, chalkboard, microchip, glass, holographic, paper, retro, xray
+macos-icon = holographic
+# macos-icon = custom-style
+# macos-icon-ghost-color = green
+# macos-icon-screen-color = black
+# macos-icon-frame = beige
+
+
+# Reload Ghostty
+keybind = super+r=reload_config
+
+# cmd+k to clear terminal
+keybind = command+k=text:\x0c
+
+copy-on-select = clipboard
+
+# need to configure super+backspac to delete to start from pointer
+# keybind = super+backspace=open_config
+
+
+
+
+
+# This is the configuration file for Ghostty.
+#
+# This template file has been automatically created at the following
+# path since Ghostty couldn't find any existing config files on your system:
+#
+#   /Users/oryam/Library/Application Support/com.mitchellh.ghostty/config
+#
+# The template does not set any default options, since Ghostty ships
+# with sensible defaults for all options. Users should only need to set
+# options that they want to change from the default.
+#
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+#
+# Ghostty can reload the configuration while running by using the menu
+# options or the bound key (default: Command + Shift + comma on macOS and
+# Control + Shift + comma on other platforms). Not all config options can be
+# reloaded while running; some only apply to new windows and others may require
+# a full restart to take effect.
+
+# Config syntax crash course
+# ==========================
+# # The config file consists of simple key-value pairs,
+# # separated by equals signs.
+# font-family = Iosevka
+# window-padding-x = 2
+#
+# # Spacing around the equals sign does not matter.
+# # All of these are identical:
+# key=value
+# key= value
+# key =value
+# key = value
+#
+# # Any line beginning with a # is a comment. It's not possible to put
+# # a comment after a config option, since it would be interpreted as a
+# # part of the value. For example, this will have a value of "#123abc":
+# background = #123abc
+#
+# # Empty values are used to reset config keys to default.
+# key =
+#
+# # Some config options have unique syntaxes for their value,
+# # which is explained in the docs for that config option.
+# # Just for example:
+# resize-overlay-duration = 4s 200ms
+keybind = shift+enter=text:\x1b\r

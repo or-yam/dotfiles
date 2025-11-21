@@ -1,84 +1,58 @@
-# Steps to bootstrap a new Mac
+# Setup Guide
 
-- Create symlinks in the Home directory to the real files in the repo.
+## 1. Initial Setup
 
-  ```zsh
-  # There are better and less manual ways to do this;
-  # investigate install scripts and bootstrapping tools.
+1. Create workspace: `mkdir -p ~/Developer/gitlab`
+2. Configure Mac settings: Follow `macsetup.md`
 
-  ln -s ~/.dotfiles/.zshrc ~/.zshrc
-  ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-  ```
+## 2. Installations
 
-- Install Homebrew, followed by the software listed in the Brewfile.
+1. Shell tools: Follow `shell_installs.md`
+2. Homebrew bundle: `brew bundle install`
+3. GUI Apps: Follow `apps.md`
 
-### Other Software to install
+## 3. Configuration (Automated)
 
-- Google Chrome browser
-  - wordtune
-  - Adblock for youtube
-  - editthiscookie
-  - google translate
-  - grepper
-  - json viewer
-  - page ruler
-  - react dev tools
-  - ublock origin
-- Alfred
-  - Settings:
-- Docker
-- Kap (capture screen videos)
-- Lightshot (screenshots) https://app.prntscr.com/en/privacy.html
-- Maccy (clipboard) https://maccy.app/
-- Notion
-- postman
-- spectacle (rectangle) (moving windows) https://github.com/eczarny/spectacle
-  - setting: set as rectangle
-- Slack
-- Sublime text (from brew)
-- VScode (from brew)
-- zoom
-- inkscape
-- github desktop
-- excalidraw
+It uses symlinks so changes in this repo are instantly reflected on your system.
 
-### Mac setup
+> [!WARNING]
+> The `install.sh` script is AI generated and not tested. Use at your own risk. Review the code before running it.
 
-- [Cursor Speed](https://www.maketecheasier.com/adjust-cursor-speed-in-mac/)
-- [show app switcher across all displays](https://gist.github.com/jthodge/c4ba15a78fb29671dfa072fe279355f0)
+1. Make the script executable:
 
-```sh
-defaults write com.apple.dock appswitcher-all-displays -bool true
-killall Dock
-```
+   ```bash
+   chmod +x install.sh
+   ```
 
-- [macOS System Preferences](https://amiryonatan.medium.com/increase-development-productivity-in-macos-c936fce43c17)
-- [macOS System Preferences (Video)](https://www.youtube.com/watch?v=2_ZbslLnshw)
+2. Run the install script:
+
+   ```bash
+   ./install.sh
+   ```
+
+## 4. Manual Configuration (Reference)
+
+> Only use this if you can't use the script. Prefer symlinking (`ln -sf source target`) over copying.
+
+### Shell & Git
+
+- Copy `.zshrc` -> `~/.zshrc`
+- Copy `.spaceshiprc.zsh` -> `~/.spaceshiprc.zsh`
+- Copy `.gitconfig` -> `~/.gitconfig`
+- Copy `gitlab-config/.gitconfig` -> `~/Developer/gitlab/.gitconfig`
+
+### Tmux
+
+- Copy `tmux/.tmux.conf` -> `~/.tmux.conf`
+- Copy `tmux/startup.sh` -> `~/.config/tmux/startup.sh` (Ensure directory exists: `mkdir -p ~/.config/tmux`)
 
 ### Terminal
 
-Software :
+- **Ghostty:** Copy `terminal/ghostty/config` -> `~/.config/ghostty/config`
+- **Karabiner:** Copy `karabiner/karabiner.json` -> `~/.config/karabiner/karabiner.json`
 
-- Iterm2
-- Warp
-- macOS Terminal
+### Scripts
 
-OhMyZsh
-[Spaceship prompt](https://github.com/spaceship-prompt/spaceship-prompt) (consider replacing spaceship with starship)
-
-MesloLGS NF font
-
-### Reference
-
-- https://github.com/eieioxyz/Beyond-Dotfiles-in-100-Seconds
-
-- https://www.youtube.com/watch?v=r_MpUP6aKiQ
-
-- https://www.youtube.com/watch?v=tMNOpaQrfAE&t=4746s
-
-- https://github.com/wesbos/dotfiles
-
-## Add scripts to path
-
-1. Move script file to local `mv <script file path> .local/bin/<file name>` (no need .sh suffix in the file name)
-2. Give it executable permission `chmod u+x <file name>`
+1. Copy script files to `~/.local/bin/` (remove `.sh` extension if desired)
+   - Example: `cp gitfixup.sh ~/.local/bin/gitfixup`
+2. Make them executable: `chmod +x ~/.local/bin/<script_name>`

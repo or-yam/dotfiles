@@ -1,0 +1,21 @@
+{
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "permissions": {
+    "allow": [],
+    "defaultMode": "default"
+  },
+  "model": "opus[1m]",
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline.sh"
+  },
+  "enabledPlugins": {
+    "babysitter@a5c.ai": true
+  },
+  "alwaysThinkingEnabled": true,
+  "effortLevel": "high",
+  "defaultMode": "bypassPermissions"
+}

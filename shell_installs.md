@@ -9,3 +9,12 @@
 - [opencode](https://opencode.ai/)
 - [cursor-cli](https://cursor.com/cli)
 - [claude code](https://www.claude.com/product/claude-code)
+- [fd](https://github.com/sharkdp/fd) — file finder
+- [ripgrep](https://github.com/BurntSushi/ripgrep) — text search (`rg`)
+- [ast-grep](https://ast-grep.github.io/) — code structure search
+- [fzf](https://github.com/junegunn/fzf) — fuzzy finder
+- [jq](https://jqlang.github.io/jq/) — JSON processor
+- [bat](https://github.com/sharkdp/bat) — `cat` replacement
+- [lsd](https://github.com/lsd-rs/lsd) — `ls` replacement
+- [zoxide](https://github.com/ajeetdsouza/zoxide) — `cd` replacement
+- [tree](https://formulae.brew.sh/formula/tree)

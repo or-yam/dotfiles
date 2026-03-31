@@ -19,8 +19,7 @@ DISABLE_LS_COLORS="true"
 alias ls='lsd'
 alias cat='bat -p'
 alias python='python3'
-# Get the IP address
-alias myip="ipconfig getifaddr en0"
+alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | awk '{print \$2}' | head -n1"
 
 # Open with vscode insider
 # alias code="open $1 -a \"Visual Studio Code - Insiders"\"
@@ -59,6 +58,8 @@ export PATH="$HOME/.local/bin:$PATH"
 
 
 eval "$(zoxide init --cmd cd zsh)"
+
+export EDITOR="code --wait"
 
 
 
